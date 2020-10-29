@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Personal Website",
+        "url": "",
+        "date": "10/2020 - Present",
+        "description": "Static Website that queries Markdown and JSON files using GraphQL, developed using React and GatsbyJS.",
+        "technologies": [
+            "GatsbyJS, React",
+            "GraphQL (via Gatsby, querying Markdown and JSON files, for example)"
+        ]
+    }
+]

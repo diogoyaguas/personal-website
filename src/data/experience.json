@@ -1,0 +1,32 @@
+[
+    {
+        "name": "President of the General Assembly",
+        "url": "https://www.aefeup.pt/",
+        "location": "AEFEUP",
+        "date": "10/2020 - Present",
+        "details": [
+            "Responsible for the guiding of the GA."
+        ]
+    },
+    {
+        "name": "Recreative Leader",
+        "url": "https://www.aefeup.pt/",
+        "location": "AEFEUP",
+        "date": "06/2019 - 10/2020",
+        "details": [
+            "Responsible for the coordination of a team composed by 30+ people that presents weekly events with an average attendance of 1000 people.",
+            "Responsible for the organization of the biggest student reception event, 'Arraial D'Engenharia 2019', in Porto overlooking several teams with a total of 100+ people that contributed to the event's success.",
+            "Previously a member since June 2017."
+        ]
+    },
+    {
+        "name": "Software Engineering Intern",
+        "url": "https://www.trustfractal.com/",
+        "location": "Trust Fractal",
+        "date": "07/2019 - 09/2019",
+        "details": [
+            "Took part in the development of an OAuth platform for personal identification (Log in with Fractal ID) with KYC/AML regulation.            ",
+            "Worked with Ruby on Rails, minitest, Docker, CircleCI, React, Redux, Jest, react-testing-library."
+        ]
+    }
+]

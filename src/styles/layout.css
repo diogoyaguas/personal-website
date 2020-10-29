@@ -1,0 +1,294 @@
+@import url("https://fontlibrary.org/face/glacial-indifference");
+
+body {
+  background-color: var(--royal-blue-dark);
+  color: var(--white);
+  font-family: "GlacialIndifferenceRegular";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  background-color: var(--royal-blue-dark);
+}
+
+a,
+a:hover,
+.navbar-brand {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navbar {
+  padding: 1.5rem 0;
+}
+
+.nav-link a {
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link a[aria-current="page"] {
+  color: var(--titanium-yellow);
+}
+
+.nav-link a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--titanium-yellow);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.justify-content-center .gatsby-image-wrapper {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  -webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.52);
+  box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.52);
+}
+
+section.me div.col {
+  text-align: center;
+}
+
+section.me .logos {
+  margin: 5rem 0;
+}
+
+section.cv {
+  color: var(--davys-grey);
+}
+
+section,
+footer {
+  padding: 4rem 0;
+  animation: slide-in-bottom 1s linear both;
+}
+
+section h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+section.final,
+section.me {
+  color: var(--davys-grey);
+  background-color: var(--white);
+}
+
+section.intro,
+section.more,
+footer {
+  background-color: var(--royal-blue-dark);
+}
+
+section.cv {
+  background-color: var(--white);
+}
+
+section.cv h1 {
+  color: var(--davys-grey);
+  font-weight: bold;
+}
+
+section.cv p.title {
+  color: var(--royal-blue-dark);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+footer .contact-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+span.underline {
+  background-image: linear-gradient(90deg, #f0e100 0%, #f0e100 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+}
+
+span.underline:hover {
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+
+  section h1 {
+    font-size: 4rem;
+  }
+
+  section.intro {
+    padding-top: 0 !important;
+  }
+
+  section.me .logos{
+    margin: 0 !important;
+  }
+
+  footer .contact-information,
+  footer p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer p a {
+    margin-right: 0 !important;
+  }
+
+  footer .social-links {
+    margin-top: 1em;
+  }
+
+  footer .social-links a {
+    margin: 0 1rem;
+  }
+}
+
+footer p {
+  font-size: 1.25rem;
+}
+
+footer a {
+  margin-right: 2rem;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--white);
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Animations */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 404 PAGE */
+.page-not-found {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.page-not-found h1 {
+  font-size: 10rem;
+  font-weight: bold;
+}
+
+.page-not-found p {
+  font-size: 1.5rem;
+}
+
+.back {
+  background: var(--white);
+  color: var(--davys-grey);
+  font-size: 1.875rem;
+  text-decoration: none;
+  margin: 2rem auto 0;
+  padding: 1rem 3rem;
+  border-radius: 500px;
+  border-color: var(--royal-blue-dark);
+  box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px var(--titanium-yellow);
+  font-weight: 900;
+  transition: all 300ms ease;
+}
+.back:hover {
+  background: var(--white);
+  color: var(--davys-grey);
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+  box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px var(--titanium-yellow);
+}
+
+.sad-face {
+  max-width: 15rem;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+
+  .page-not-found {
+    padding-top: 2.5rem;
+  }
+
+  .page-not-found h1 {
+    font-size: 5rem;
+  }
+
+  .page-not-found p {
+    font-size: 1rem;
+  }
+
+  .sad-face {
+    padding-bottom: 2.5rem;
+  }
+
+  .back {
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+  }
+}
