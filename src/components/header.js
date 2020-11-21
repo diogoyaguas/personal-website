@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 
+import Logo from "../images/svg/logo.svg"
+
 const Header = ({ className }) => {
   const links = [
     {
@@ -24,7 +26,7 @@ const Header = ({ className }) => {
         <Navbar className="bg-transparent" expand="md">
           <Navbar.Brand>
             <Link to="/">
-              <h1> DY </h1>
+              <Logo />
             </Link>
           </Navbar.Brand>
 
